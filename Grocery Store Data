@@ -1,0 +1,10 @@
+CREATE TABLE store (id integer primary key, items text, aisle integer, price integer, quantity integer);
+
+INSERT INTO store VALUES
+(1, 'bikes', 1, 100, 10),
+(2, 'hats', 2, 20, 100), 
+(3, 'shoes', 3, 50, 70),
+(4, 'glasses', 4, 80, 90),
+(5, 'socks', 5, 10, 100);
+
+SELECT * FROM store ORDER BY quantity desc
